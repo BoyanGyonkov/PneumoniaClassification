@@ -1,7 +1,3 @@
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1' 
-os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin")
-os.add_dll_directory("C:/tools/cuda/bin")
 import tensorflow as tf
 import numpy as np
 
