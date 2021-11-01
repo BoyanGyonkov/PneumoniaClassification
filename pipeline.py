@@ -1,13 +1,10 @@
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '0'
-os.add_dll_directory("C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.2/bin")
-os.add_dll_directory("C:/tools/cuda/bin")
 import tensorflow as tf
 import tensorflow_addons as tfa 
 import numpy as np
-import cnn_t
 import matplotlib.pyplot as plt
 import random
+import cnn_t
+
 
 def parse_function(filename, label):
     image_string = tf.io.read_file(filename)
